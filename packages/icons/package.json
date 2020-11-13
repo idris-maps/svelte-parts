@@ -4,7 +4,9 @@
   "svelte": "index.js",
   "main": "index.js",
   "scripts": {
-    "build:feather": "./feather.sh"
+    "build:feather": "./feather.sh",
+    "build:maki": "./maki.sh",
+    "build": "npm run build:feather && npm run build:maki"
   },
   "publishConfig": {
     "access": "public"
