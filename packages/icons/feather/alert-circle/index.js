@@ -1,0 +1,1 @@
+export { default as default } from './AlertCircle.svelte'

@@ -1,0 +1,9 @@
+{
+  "name": "@svelte-parts/icons",
+  "version": "0.0.0",
+  "svelte": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "build:feather": "./feather.sh"
+  }
+}
