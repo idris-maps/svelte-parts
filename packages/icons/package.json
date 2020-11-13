@@ -6,10 +6,10 @@
   "scripts": {
     "build:feather": "./feather.sh",
     "build:maki": "./maki.sh",
-    "build": "npm run build:feather && npm run build:maki"
+    "build:octicons": "./octicons.sh",
+    "build": "npm run build:feather && npm run build:maki && npm run build:octicons"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "4cf81c963fc19451a4422cf52c4540bb92e40af5"
+  }
 }
