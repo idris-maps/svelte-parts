@@ -1,1 +1,0 @@
-export { default as default } from './Minimize2.svelte'
