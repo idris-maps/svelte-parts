@@ -5,5 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:feather": "./feather.sh"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "4cf81c963fc19451a4422cf52c4540bb92e40af5"
 }
