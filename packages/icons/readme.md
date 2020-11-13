@@ -19,8 +19,8 @@ npm install @svelte-parts/icons
 ```html
 <script>
   import ActivityIcon from '@svelte-parts/icons/feather/activity'
-  import AerialwayIcon from '@svelte-parts/maki/aerialway'
-  import AlertIcon from '@svelte-parts/octicons/alert'
+  import AerialwayIcon from '@svelte-parts/icons/maki/aerialway'
+  import AlertIcon from '@svelte-parts/icons/octicons/alert'
 </script>
 
 <h1>Inlined <ActivityIcon /> icons</h1>
