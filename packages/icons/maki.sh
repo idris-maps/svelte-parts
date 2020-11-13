@@ -6,4 +6,4 @@ mkdir maki
 
 npx degit https://github.com/mapbox/maki/icons temp/maki
 
-#node maki.build.js
+node maki.build.js
