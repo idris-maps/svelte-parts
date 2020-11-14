@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import Editor from './codemirror/CodeMirror.svelte'
   import 'codemirror/mode/gfm/gfm'
 
