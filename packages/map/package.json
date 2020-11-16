@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/map",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Leaflet map components for svelte",
   "author": "idris-maps",
   "keywords": [
