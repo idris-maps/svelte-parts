@@ -4,4 +4,7 @@ rm -rf _site \
 && npm run build:11ty \
 && mkdir _site/js \
 && cp -avr dist/* _site/js/ \
-&& cp -avr src/_includes/*.css _site/
+&& cp -avr src/_includes/*.css _site/ \
+&& cp -avr node_modules/leaflet/dist/leaflet.css _site/leaflet.css \
+&& mkdir _site/images \
+&& cp -avr node_modules/leaflet/dist/images/* _site/map/images/

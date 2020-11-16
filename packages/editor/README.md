@@ -2,6 +2,8 @@
 
 A markdown editor for svelte. Uses [codemirror](https://codemirror.net) and exposes a svelte wrapper so you can create your own editor.
 
+[Demo](https://svelte-parts.surge.sh/editor)
+
 ## Install
 
 ```

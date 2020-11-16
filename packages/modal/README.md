@@ -2,6 +2,8 @@
 
 A simple modal for svelte
 
+[Demo](https://svelte-parts.surge.sh/modal)
+
 ## Install
 
 ```

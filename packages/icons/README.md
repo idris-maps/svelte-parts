@@ -2,6 +2,8 @@
 
 Icon components for svelte.
 
+[Demo and list of all available icons](https://svelte-parts.surge.sh/icons)
+
 Collections:
 
 * [feather icons](https://feathericons.com/) ([repo](https://github.com/feathericons/feather) - License: MIT)
