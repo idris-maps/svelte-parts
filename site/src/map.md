@@ -94,4 +94,4 @@ const map = getMap()
 
 Import the leaflet functions and properties you need to create new components.
 
-The [Map component](https://github.com/idris-maps/svelte-parts/blob/master/packages/map/Map.svelte), to initialise the leaflet instance, is also straight forward. You may not this library after all.
+The [Map component](https://github.com/idris-maps/svelte-parts/blob/master/packages/map/Map.svelte), to initialise the leaflet instance, is also straight forward. You may not need this library after all.
