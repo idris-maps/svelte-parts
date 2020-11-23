@@ -4,11 +4,15 @@ description: svelte components
 layout: layout.njk
 ---
 
-Components for [svelte](https://svelte.dev/)
+# Components for [svelte](https://svelte.dev/)
 
 ## [@svelte-parts/editor](/editor)
 
 A markdown editor and [codemirror](https://codemirror.net/) wrapper.
+
+## [@svelte-parts/form](/form)
+
+Yet another form component.
 
 ## [@svelte-parts/icons](/icons)
 
