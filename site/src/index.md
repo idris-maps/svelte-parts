@@ -4,7 +4,7 @@ description: svelte components
 layout: layout.njk
 ---
 
-# Components for [svelte](https://svelte.dev/)
+### Components for [svelte](https://svelte.dev/)
 
 ## [@svelte-parts/editor](/editor)
 

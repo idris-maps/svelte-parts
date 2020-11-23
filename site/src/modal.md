@@ -4,7 +4,7 @@ description: A modal for svelte
 layout: layout.njk
 ---
 
-# `@svelte-parts/modal`
+# @svelte-parts/modal
 
 A simple modal for svelte
 
