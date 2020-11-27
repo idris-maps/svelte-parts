@@ -8,6 +8,10 @@ Components for [svelte](https://svelte.dev/)
 
 A markdown editor and [codemirror](https://codemirror.net/) wrapper.
 
+## [@svelte-parts/form](https://github.com/idris-maps/svelte-parts/tree/master/packages/form#svelte-partsform)
+
+Yet another form component.
+
 ## [@svelte-parts/icons](https://github.com/idris-maps/svelte-parts/tree/master/packages/icons#svelte-partsicons)
 
 SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://labs.mapbox.com/maki-icons/) and [octicons](https://primer.style/octicons/).
