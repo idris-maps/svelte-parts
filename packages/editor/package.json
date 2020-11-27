@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/editor",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Markdown editor and codemirror wrapper for svelte",
   "author": "idris-maps",
   "keywords": [
