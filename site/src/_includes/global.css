@@ -275,7 +275,8 @@ a b,
 a em,
 a i,
 a strong,
-button {
+button,
+input[type="submit"] {
   border-radius: var(--border-radius);
   display: inline-block;
   font-size: medium;
@@ -285,18 +286,21 @@ button {
   padding: 0.5rem 1rem;
 }
 
-button {
+button,
+input[type="submit"] {
   font-family: var(--font-family);
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   cursor: pointer;
   filter: brightness(var(--hover-brightness));
 }
 
 a b,
 a strong,
-button {
+button,
+input[type="submit"] {
   background: var(--color-secondary);
   border: 2px solid var(--color-secondary);
   color: var(--color-bg);
@@ -335,7 +339,8 @@ input:disabled {
   cursor: not-allowed;
 }
 
-button[disabled]:hover {
+button[disabled]:hover,
+input[type="submit"]:hover {
   filter: none;
 }
 
@@ -353,6 +358,19 @@ form {
 form header {
   margin: 1.5rem 0;
   padding: 1.5rem 0;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="range"],
+select,
+textarea {
+  width: calc(100% - 1.5em);
 }
 
 input,
@@ -513,4 +531,8 @@ header .header-repo {
   font-size: 12px;
   width: 100%;
   text-align: center;
+}
+
+div.pristine input {
+  box-shadow:none;
 }
