@@ -6,6 +6,10 @@ layout: layout.njk
 
 ### Components for [svelte](https://svelte.dev/)
 
+```comp
+name: logo
+```
+
 ## [@svelte-parts/editor](/editor)
 
 A markdown editor and [codemirror](https://codemirror.net/) wrapper.
@@ -25,3 +29,7 @@ Map components using [leaflet](https://leafletjs.com/).
 ## [@svelte-parts/modal](/modal)
 
 Just a modal.
+
+## [@svelte-parts/zoom](/zoom)
+
+Allow pan and zoom on images. Uses [d3-zoom](https://github.com/d3/d3-zoom).

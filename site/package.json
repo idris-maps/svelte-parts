@@ -26,6 +26,7 @@
     "@svelte-parts/icons": "0.0.7",
     "@svelte-parts/map": "0.0.9",
     "@svelte-parts/modal": "0.0.8",
+    "@svelte-parts/zoom": "0.0.16",
     "@tsconfig/svelte": "^1.0.10",
     "clean-css": "^4.2.3",
     "eleventy": "^1.0.6",

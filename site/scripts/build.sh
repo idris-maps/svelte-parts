@@ -5,6 +5,10 @@ rm -rf _site \
 && mkdir _site/js \
 && cp -avr dist/* _site/js/ \
 && cp -avr src/_includes/*.css _site/ \
+&& cp -avr src/_includes/*.png _site/ \
+&& cp -avr src/_includes/*.ico _site/ \
+&& cp -avr src/_includes/*.gif _site/ \
+&& cp -avr src/_includes/*.webmanifest _site/ \
 && cp -avr node_modules/leaflet/dist/leaflet.css _site/leaflet.css \
 && mkdir _site/map/images \
 && cp -avr node_modules/leaflet/dist/images/* _site/map/images/
