@@ -3,9 +3,9 @@
   import RenderField from './field/index.svelte'
 
   export let fields = []
-  export let onSubmit
-  export let submitButton
-  export let errorMessage
+  export let onSubmit = undefined
+  export let submitButton = undefined
+  export let errorMessage = undefined
 
   let data = getInitialData(fields)
   const setData = (key, value) => {

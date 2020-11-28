@@ -17,7 +17,8 @@
     "build:feather": "./feather.sh",
     "build:maki": "./maki.sh",
     "build:octicons": "./octicons.sh",
-    "build": "npm run build:feather && npm run build:maki && npm run build:octicons"
+    "build": "npm run build:feather && npm run build:maki && npm run build:octicons",
+    "prepublish": "npm run build"
   },
   "publishConfig": {
     "access": "public"

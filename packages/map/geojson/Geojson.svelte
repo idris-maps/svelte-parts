@@ -3,7 +3,7 @@
   import { geoJSON } from 'leaflet'
 
   export let data
-  export let style
+  export let style = {}
 
   const { getMap } = getContext('leaflet_map')
   const map = getMap()

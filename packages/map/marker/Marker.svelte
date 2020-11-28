@@ -4,7 +4,7 @@
 
   export let lat = 0
   export let lon = 0
-  export let popup
+  export let popup = undefined
 
   const { getMap } = getContext('leaflet_map')
   const map = getMap()
