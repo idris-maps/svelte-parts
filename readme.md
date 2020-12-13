@@ -12,6 +12,10 @@ A markdown editor and [codemirror](https://codemirror.net/) wrapper.
 
 Yet another form component.
 
+## [@svelte-parts/form-builder](https://github.com/idris-maps/svelte-parts/tree/master/packages/form-builder#svelte-partsform-builder)
+
+UI to create form descriptions for [@svelte-parts/form](https://github.com/idris-maps/svelte-parts/tree/master/packages/form#svelte-partsform).
+
 ## [@svelte-parts/icons](https://github.com/idris-maps/svelte-parts/tree/master/packages/icons#svelte-partsicons)
 
 SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://labs.mapbox.com/maki-icons/) and [octicons](https://primer.style/octicons/).
@@ -23,3 +27,7 @@ Map components using [leaflet](https://leafletjs.com/).
 ## [@svelte-parts/modal](https://github.com/idris-maps/svelte-parts/tree/master/packages/modal#svelte-partsmodal)
 
 Just a modal.
+
+## [@svelte-parts/zoom](https://github.com/idris-maps/svelte-parts/tree/master/packages/zoom#svelte-partszoom)
+
+Allow pan and zoom on images. Uses [d3-zoom](https://github.com/d3/d3-zoom).
