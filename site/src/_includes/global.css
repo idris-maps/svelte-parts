@@ -40,6 +40,10 @@
 }
 */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -47,7 +51,7 @@ html, body {
 
 /* Layout */
 article aside {
-  background: var(--color-secondary-accent);
+  background: var(--color-secondary);
   border-left: 4px solid var(--color-secondary);
   padding: 0.01rem 0.8rem;
 }
@@ -370,7 +374,11 @@ input[type="text"],
 input[type="range"],
 select,
 textarea {
-  width: calc(100% - 1.5em);
+  width: 100%;
+}
+
+input[type="color"] {
+  padding: 0;
 }
 
 input,
@@ -379,7 +387,11 @@ select,
 textarea {
   display: block;
   font-size: inherit;
-  max-width: var(--width-card-wide);
+  max-width: calc(100% - 1em);
+}
+
+select {
+  max-width: 100%;
 }
 
 input[type="checkbox"],
@@ -434,10 +446,8 @@ table tr {
 }
 
 table thead {
-  background-color: var(--color);
   border-collapse: collapse;
   border-radius: var(--border-radius);
-  color: var(--color-bg);
   margin: 0;
   padding: 0;
 }
@@ -535,4 +545,155 @@ header .header-repo {
 
 div.pristine input {
   box-shadow:none;
+}
+
+/* FORM BUILDER */
+
+.form-builder {
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  display: block;
+  max-width: var(--width-card-wide);
+  min-width: var(--width-card);
+  padding: 1.5rem;
+  text-align: var(--justify-normal);
+}
+
+.display-fields {
+  margin-bottom: 1em;
+}
+
+.add-field {
+  margin-bottom: 1em;
+}
+
+.add-field__add button,
+.add-field__add select {
+  margin: 0;
+}
+
+.add-field__add {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  column-gap: 1em;
+}
+
+.add-field__label,
+.display-fields__label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.add-field__head,
+.display-fields__row {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+
+.display-fields__row  {
+  border-bottom: 1px solid var(--color-shadow);
+}
+
+.add-field__cancel,
+.display-fields__row-edit {
+  text-align: right;
+}
+
+
+.add-field__cancel button,
+.display-fields__row-edit button,
+.options-field__remove-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: inherit;
+  color: var(--color-secondary);
+  font-size: inherit;
+}
+
+.add-field__details,
+.display-fields__edit {
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--color-shadow);
+}
+
+.add-field__details form,
+.display-fields__edit form {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.options-field__options-input {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  column-gap: 1em;
+}
+
+.options-field__options-input * {
+  margin: 0;
+}
+
+.options-field__options-input select {
+  width: 100%;
+}
+
+.options-field__options-list {
+  list-style-type: none;
+}
+
+.options-field__remove-btn {
+  margin-right: 1em;
+}
+
+.form-builder input {
+  max-width: 100%;
+}
+
+.form-builder select {
+  max-width: calc(100%-1.5em);
+}
+
+.options-field__options-input input {
+  width: 100%;
+}
+
+
+@media (max-width: 400px) {
+  .form-builder {
+    padding: 0.5em;
+  }
+
+  .add-field__details,
+  .display-fields__edit {
+    margin: 0em;
+    padding: 0.5em 0.1em;
+  }
+
+  input,
+  select {
+    max-width: 100%;
+  }
+
+  .add-field__add {
+    grid-template-columns: 1fr;
+  }
+
+  .add-field__cancel {
+    column-gap: 0.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .options-field__options-input {
+    grid-template-columns: 75% 25%;
+  }
+
+  .options-field__options-input div:nth-child(2) button {
+    padding: 0.2em 0.5em;
+  }
 }

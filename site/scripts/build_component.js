@@ -1,5 +1,4 @@
 const util = require('util')
-const path = require('path')
 const exec = require('child_process').exec
 
 const run = util.promisify(exec)

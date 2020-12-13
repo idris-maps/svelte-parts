@@ -18,6 +18,10 @@ A markdown editor and [codemirror](https://codemirror.net/) wrapper.
 
 Yet another form component.
 
+## [@svelte-parts/form-builder](/form-builder)
+
+UI to create form descriptions for [@svelte-parts/form](https://github.com/idris-maps/svelte-parts/tree/master/packages/form#svelte-partsform).
+
 ## [@svelte-parts/icons](/icons)
 
 SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://labs.mapbox.com/maki-icons/) and [octicons](https://primer.style/octicons/).
