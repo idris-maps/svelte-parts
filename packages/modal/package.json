@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/modal",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Simple svelte modal",
   "author": "idris-maps",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/form",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Yet another svelte form component",
   "author": "idris-maps",
   "keywords": [
