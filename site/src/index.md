@@ -10,6 +10,10 @@ layout: layout.njk
 name: logo
 ```
 
+## [@svelte-parts/drop-file](/drop-file)
+
+Drop files(s) or click to browse file system.
+
 ## [@svelte-parts/editor](/editor)
 
 A markdown editor and [codemirror](https://codemirror.net/) wrapper.
