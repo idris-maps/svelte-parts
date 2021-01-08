@@ -4,6 +4,10 @@ Components for [svelte](https://svelte.dev/)
 
 [Demo](https://svelte-parts.surge.sh)
 
+## [@svelte-parts/drop-file](https://github.com/idris-maps/svelte-parts/tree/master/packages/drop-file#svelte-partsdrop-file)
+
+Drop files(s) or click to browse file system.
+
 ## [@svelte-parts/editor](https://github.com/idris-maps/svelte-parts/tree/master/packages/editor#svelte-partseditor)
 
 A markdown editor and [codemirror](https://codemirror.net/) wrapper.

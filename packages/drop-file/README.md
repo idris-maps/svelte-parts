@@ -18,7 +18,7 @@ npm install @svelte-parts/drop-file
     alert(`Files: ${files.map(d => d.name).join(', ')}`) 
 </script>
 
-<Drop onDrop={onDrop} />
+<DropFile onDrop={onDrop} />
 ```
 
 ### With custom drop zone
@@ -35,7 +35,7 @@ npm install @svelte-parts/drop-file
   }
 </script>
 
-<Drop
+<DropFile
   onDrop={onDrop}
   onEnter={() => fileOver = true}
   onLeave={() => fileOver = false}
@@ -47,7 +47,7 @@ npm install @svelte-parts/drop-file
       <p>Upload file</p>
     {/if}
   </div>
-</Drop>
+</DropFile>
 
 <style>
   .drop-zone {
@@ -58,6 +58,11 @@ npm install @svelte-parts/drop-file
     height: 100px;
     background-color: #ff3e00;
     color: white;
+  }
+  .over {
+    background-color: white;
+    color: #ff3e00;
+    border: #ff3e00 solid 2px;
   }
   .drop-zone p {
     text-align: center;
