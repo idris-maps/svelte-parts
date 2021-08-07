@@ -34,6 +34,10 @@ SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://
 
 Map components using [leaflet](https://leafletjs.com/).
 
+## [@svelte-parts/markdown](/markdown)
+
+Use markdown block in your svelte app.
+
 ## [@svelte-parts/modal](/modal)
 
 Just a modal.
