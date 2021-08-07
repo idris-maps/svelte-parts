@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/markdown",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Markdown blocks in svelte",
   "author": "idris-maps",
   "keywords": [
