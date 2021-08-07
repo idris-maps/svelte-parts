@@ -28,7 +28,7 @@ SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://
 
 Map components using [leaflet](https://leafletjs.com/).
 
-## [@svelte-parts/markdown](https://github.com/idris-maps/svelte-parts/tree/master/packages/map#svelte-partsmarkdown)
+## [@svelte-parts/markdown](https://github.com/idris-maps/svelte-parts/tree/master/packages/markdown#svelte-partsmarkdown)
 
 Use markdown blocks.
 
