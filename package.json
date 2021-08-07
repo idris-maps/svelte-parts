@@ -1,7 +1,10 @@
 {
   "name": "root",
-  "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
-  }
+  },
+  "scripts": {
+    "publish": "lerna run build && lerna publish"
+  },
+  "homepage": "https://svelte-parts.surge.sh"
 }

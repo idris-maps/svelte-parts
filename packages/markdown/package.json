@@ -1,0 +1,31 @@
+{
+  "name": "@svelte-parts/markdown",
+  "version": "0.0.18",
+  "description": "Markdown blocks in svelte",
+  "author": "idris-maps",
+  "keywords": [
+    "svelte",
+    "markdown"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idris-maps/svelte-parts.git"
+  },
+  "peerDependencies": {
+    "svelte": "^3.29.7"
+  },
+  "dependencies": {
+    "dompurify": "^2.3.0",
+    "marked": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^2.2.3",
+    "@types/marked": "^2.0.4"
+  }
+}
