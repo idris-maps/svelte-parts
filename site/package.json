@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@code-blocks/eleventy-plugin": "^0.1.7",
-    "@code-blocks/from-html": "^0.1.0",
-    "@code-blocks/prism": "^0.1.6",
+    "@code-blocks/eleventy-plugin": "^0.1.8",
+    "@code-blocks/from-html": "^0.1.8",
+    "@code-blocks/prism": "^0.1.8",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@rollup/plugin-typescript": "^6.1.0",
