@@ -4,6 +4,8 @@ description: Markdown blocks
 layout: layout.njk
 ---
 
+# @svelte-parts/markdown
+
 ## Install
 
 ```

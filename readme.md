@@ -28,6 +28,10 @@ SVG icons from [feather icons](https://feathericons.com/), [maki icons](https://
 
 Map components using [leaflet](https://leafletjs.com/).
 
+## [@svelte-parts/markdown](https://github.com/idris-maps/svelte-parts/tree/master/packages/map#svelte-partsmarkdown)
+
+Use markdown blocks.
+
 ## [@svelte-parts/modal](https://github.com/idris-maps/svelte-parts/tree/master/packages/modal#svelte-partsmodal)
 
 Just a modal.
