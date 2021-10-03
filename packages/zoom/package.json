@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/zoom",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Zoomable images for svelte",
   "author": "idris-maps",
   "keywords": [
