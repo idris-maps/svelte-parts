@@ -31,7 +31,7 @@ export default fields =>
           [field.property]: field.value || field.min,
         }
       }
-      if (field.value) {
+      if (Object.keys(field).includes('value')) {
         return {
           ...result,
           [field.property]: field.value
