@@ -1,6 +1,6 @@
 <script>
   import marked from 'marked'
-  import { sanitize } from 'dompurify'
+  import dompurify from 'dompurify'
 
   export let markedOptions = undefined 
   export let markedExtensions = []
@@ -16,7 +16,7 @@
       RETURN_DOM_FRAGMENT: false,
       RETURN_DOM_IMPORT: false,
     }
-    node.innerHTML = String(sanitize(marked(node.textContent), sanitizeConfig))
+    node.innerHTML = String(dompurify.sanitize(marked(node.textContent), sanitizeConfig))
   }
 </script>
 

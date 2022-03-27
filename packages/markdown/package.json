@@ -21,11 +21,11 @@
     "svelte": "^3.29.7"
   },
   "dependencies": {
-    "dompurify": "^2.3.0",
-    "marked": "^2.1.3"
+    "dompurify": "^2.3.6",
+    "marked": "^4.0.12"
   },
   "devDependencies": {
-    "@types/dompurify": "^2.2.3",
-    "@types/marked": "^2.0.4"
+    "@types/dompurify": "^2.3.3",
+    "@types/marked": "^4.0.3"
   }
 }
