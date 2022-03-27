@@ -1,5 +1,5 @@
 <script>
-  import marked from 'marked'
+  import { marked } from 'marked'
   import dompurify from 'dompurify'
 
   export let markedOptions = undefined 
