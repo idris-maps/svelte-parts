@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/form-builder",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "UI to create forms",
   "author": "idris-maps",
   "keywords": [
@@ -22,7 +22,7 @@
     "svelte": "^3.31.0"
   },
   "dependencies": {
-    "@svelte-parts/form": "^0.0.20",
-    "@svelte-parts/icons": "^0.0.20"
+    "@svelte-parts/form": "^0.0.21",
+    "@svelte-parts/icons": "^0.0.21"
   }
 }
