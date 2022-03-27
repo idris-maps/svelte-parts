@@ -1,6 +1,6 @@
 {
   "name": "@svelte-parts/drop-file",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Drop files(s) or click to browse file system",
   "author": "idris-maps",
   "keywords": [
