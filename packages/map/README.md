@@ -4,6 +4,8 @@ Map components using [leaflet](https://leafletjs.com/). Lets you create very bas
 
 [Demo](https://svelte-parts.surge.sh/map)
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/df8688f5e13d4d8088d26acc6d55513e?version=3.46.6)
+
 ## Install
 
 ```

@@ -2,6 +2,8 @@
 
 A component to upload files. Drop files or click it to browse the file system. Add the behavior to an exiting element or use the default component.
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/c1778c608f404c24afd11cbc322dbc8c?version=3.46.6)
+
 ## Install
 
 ```

@@ -4,6 +4,8 @@ Yet another form component.
 
 The idea here is to define the fields in json. The form definition can then come from the server or be modified on the fly.
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/0cb7990827dd48dcabe40084a02c75f0?version=3.46.6)
+
 ## Install
 
 ```

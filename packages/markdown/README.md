@@ -4,6 +4,8 @@ For markdown blocks
 
 [Demo](https://svelte-parts.surge.sh/markdown)
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/5366ed6cb7a4425eb6784edd1a3020be?version=3.46.6)
+
 ## Install
 
 ```

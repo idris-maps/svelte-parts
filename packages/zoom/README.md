@@ -2,6 +2,8 @@
 
 Allow pan and zoom on images. Uses [d3-zoom](https://github.com/d3/d3-zoom).
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/e90699c7159b434496159277a190c309?version=3.46.6)
+
 ## Install
 
 ```

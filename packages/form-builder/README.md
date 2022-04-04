@@ -2,6 +2,8 @@
 
 UI to create form descriptions for [@svelte-parts/form](https://github.com/idris-maps/svelte-parts/tree/master/packages/form#svelte-partsform).
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/6bfa95a44ad74779851556f3e909b57e?version=3.46.6)
+
 ## Install
 
 ```

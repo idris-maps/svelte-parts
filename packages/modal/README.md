@@ -4,6 +4,8 @@ A simple modal for svelte
 
 [Demo](https://svelte-parts.surge.sh/modal)
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/9dc23be3526643d3ac99babe9c617b6b?version=3.46.6)
+
 ## Install
 
 ```

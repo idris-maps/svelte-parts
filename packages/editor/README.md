@@ -4,6 +4,8 @@ A markdown editor for svelte. Uses [codemirror](https://codemirror.net) and expo
 
 [Demo](https://svelte-parts.surge.sh/editor)
 
+Try it out in the [svelte REPL](https://svelte.dev/repl/dde94690de234afbbd8d657fdcb93dc8?version=3.46.6)
+
 ## Install
 
 ```
