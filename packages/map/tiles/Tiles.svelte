@@ -1,6 +1,6 @@
 <script>
   import { getContext } from 'svelte'
-  import { tileLayer } from 'leaflet'
+  import L from 'leaflet'
 
   export let url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   export let maxZoom = 19
@@ -10,7 +10,7 @@
   const map = getMap()
 
   if (map) {
-    tileLayer(url, {
+    L.tileLayer(url, {
       maxZoom,
       attribution,
     }).addTo(map)

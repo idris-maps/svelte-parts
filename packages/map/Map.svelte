@@ -1,6 +1,6 @@
 <script>
   import { onMount, setContext } from 'svelte'
-  import { map as lmap } from 'leaflet'
+  import L from 'leaflet'
 
   setContext('leaflet_map', {
     getMap: () => map
@@ -18,7 +18,7 @@
   let map
 
   onMount(() => {
-    map = lmap(container).setView([lat, lon], zoom)
+    map = L.map(container).setView([lat, lon], zoom)
 
     return () => {
       map.remove()
