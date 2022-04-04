@@ -10,7 +10,7 @@ const write = (path, content) => util.promisify(fs.writeFile)(path, content, 'ut
 const IN_DIR = path.resolve(__dirname, 'temp', 'maki')
 const OUT_DIR = path.resolve(__dirname, 'maki')
 
-const removeExtension = d => d.split('-15.')[0]
+const removeExtension = d => d.split('.svg')[0]
 const capitalize = d => d.charAt(0).toUpperCase() + d.slice(1)
 const toCamelCase = d => d.split('-')
   .map(capitalize)
@@ -79,7 +79,7 @@ const createIndex = fileNames => {
 
 const run = async () => {
   const template = await prepareTemplate()
-  const files = (await readdir(IN_DIR)).filter(d => d.includes('-15.svg'))
+  const files = (await readdir(IN_DIR)).filter(d => d.includes('.svg'))
   await Promise.all(files.map(createComponent(template)))
   await createIndex(files)
 
