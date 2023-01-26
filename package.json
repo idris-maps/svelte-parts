@@ -1,12 +1,8 @@
 {
 	"name": "svelte-parts",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "svelte-kit sync && svelte-package",
-		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"pkg": "svelte-package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
