@@ -1,10 +1,10 @@
 <script lang="ts">
+  import type { Data, Checkbox, Field } from '../../types'
   import Form from '../../Form.svelte'
   import { fixProperty, formField, addExistingValues } from './utils'
-  import type { Data, Checkbox } from '../../types'
 
   export let onAdd: (d: Checkbox) => void
-  export let field: Checkbox
+  export let field: Field | null
 
   const onSubmit = (d: Data)  => {
     const f = {

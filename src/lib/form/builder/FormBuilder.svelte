@@ -1,6 +1,6 @@
 <script lang="ts">
   import AddField from './AddField.svelte'
-  import DisplayFields from './DisplayFields'
+  import DisplayFields from './DisplayFields/DisplayFields.svelte'
   import type { Field } from '../types'
 
   export let onSubmit:(fields: Field[]) => void

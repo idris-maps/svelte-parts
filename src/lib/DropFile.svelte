@@ -1,5 +1,5 @@
 <script lang="ts">
-  import FallbackSvg from './FallbackSvg.svelte'
+  import FallbackSvg from './DropFileFallbackSvg.svelte'
 
   export let multiple: boolean = false
   export let onDrop: (files: File[]) => void

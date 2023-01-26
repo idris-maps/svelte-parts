@@ -1,18 +1,19 @@
-<script>
-  import Form from '@svelte-parts/form'
+<script lang="ts">
+  import type { Data, Date as DateF, Field } from '../../types'
+  import Form from '../../Form.svelte'
   import { fixProperty, formField, addExistingValues, removeEmptyKeys } from './utils'
 
-  export let onAdd
-  export let field
+  export let onAdd: (d: DateF) => void
+  export let field: Field | null
 
-  const onSubmit = d => {
+  const onSubmit = (d: Data) => {
     const f = {
       ...removeEmptyKeys(d),
       type: 'date',
       property: fixProperty(d.label),
       label: d.label,
       notRequired: d.required === 'No',
-    }
+    } as DateF
     onAdd(f)
   }
 

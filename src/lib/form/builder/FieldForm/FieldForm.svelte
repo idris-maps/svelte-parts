@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import type { Field } from '../../types'
+  import Form from '../../Form.svelte'
   import Checkbox from './Checkbox.svelte'
   import Color from './Color.svelte'
   import Date from './Date.svelte'
@@ -8,8 +10,8 @@
   import TextField from './TextField.svelte'
   import Range from './Range.svelte'
 
-  export let onSubmit
-  export let field = null
+  export let onSubmit: (d: Field) => void
+  export let field: Field | null = null
   export let type = field ? field.type : ''
 
 </script>

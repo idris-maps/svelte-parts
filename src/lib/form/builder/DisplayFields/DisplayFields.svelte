@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
+  import type { Field } from '../../types'
   import Row from './Row.svelte'
 
-  export let fields
-  export let onUpdate
-  export let onRemove
+  export let fields: Field[]
+  export let onUpdate: (prev: Field, next: Field) => void
+  export let onRemove: (d: Field) => void
 </script>
 
 <div class="display-fields">

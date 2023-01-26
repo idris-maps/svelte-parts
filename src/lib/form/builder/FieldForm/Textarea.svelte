@@ -1,18 +1,19 @@
-<script>
-  import Form from '@svelte-parts/form'
+<script lang="ts">
+  import type { Data, Textarea, Field } from '../../types'
+  import Form from '../../Form.svelte'
   import { fixProperty, formField, removeEmptyKeys, addExistingValues } from './utils'
 
-  export let onAdd
-  export let field = null
+  export let onAdd: (d: Textarea) => void
+  export let field: Field | null = null
 
-  const onSubmit = d => {
+  const onSubmit = (d: Data) => {
     const f = {
       ...removeEmptyKeys(d),
       type: 'textarea',
       property: fixProperty(d.label),
       label: d.label,
       notRequired: d.required === 'No',
-    }
+    } as Textarea
     onAdd(f)
   }
 

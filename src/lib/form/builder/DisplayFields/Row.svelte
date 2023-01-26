@@ -1,27 +1,28 @@
-<script>
+<script lang="ts">
   import { slide } from 'svelte/transition'
-  import DeleteIcon from '@svelte-parts/icons/feather/trash'
-  import EditIcon from '@svelte-parts/icons/feather/settings'
-  import CloseIcon from '@svelte-parts/icons/feather/x'
-  import FieldForm from '../FieldForm'
+  import DeleteIcon from '../../../icons/feather/Trash.svelte'
+  import EditIcon from '../../../icons/feather/Settings.svelte'
+  import CloseIcon from '../../../icons/feather/X.svelte'
+  import FieldForm from '../FieldForm/FieldForm.svelte'
+  import type { Field } from '../../types'
 
-  export let field
-  export let onUpdate
-  export let onRemove
+  export let field: Field
+  export let onUpdate: (prev: Field, next: Field) => void
+  export let onRemove: (d: Field) => void
 
   let edit = false
 
-  const onToggleEdit =  e => {
+  const onToggleEdit =  (e: Event) => {
     e.preventDefault()
     edit = !edit
   }
 
-  const onSubmitUpdate = prev => next => {
+  const onSubmitUpdate = (prev: Field) => (next: Field) => {
     edit = false
     onUpdate(prev, next)
   }
 
-  const onClickRemove = field => e => {
+  const onClickRemove = (field: Field) => (e: Event) => {
     e.preventDefault()
     edit = false
     onRemove(field)

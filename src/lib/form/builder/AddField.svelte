@@ -1,7 +1,7 @@
 <script lang="ts">
   import { slide, blur } from 'svelte/transition'
   import CancelIcon from '../../icons/feather/X.svelte'
-  import FieldForm from './FieldForm'
+  import FieldForm from './FieldForm/FieldForm.svelte'
   import { fieldTypes } from './FieldForm/utils'
   import type { Field } from '../types'
 

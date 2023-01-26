@@ -1,40 +1,41 @@
-<script>
-  import AddIcon from '@svelte-parts/icons/feather/plus'
-  import RemoveIcon from '@svelte-parts/icons/feather/x'
+<script lang="ts">
+  import type { Select, Radio, Field } from '../../types'
+  import AddIcon from '../../../icons/feather/Plus.svelte'
+  import RemoveIcon from '../../../icons/feather/X.svelte'
   import { fixProperty } from './utils'
 
-  export let onAdd
-  export let type
-  export let field = null
+  export let onAdd: (d: Select | Radio) => void
+  export let type: 'select' | 'radio'
+  export let field: Field | null = null
 
-  const isOptionsField = d => Object.keys(d).includes('options')
+  const isOptionsField = (d: Field): d is Field & { options: Array<any> } => Object.keys(d).includes('options')
   let _field = field && isOptionsField(field) ? field : null
 
-  const isSelectOption = d => !(String(d) === d)
-  const selectOptionToString = d =>
-    d.map(o => {
+  const isSelectOption = (d: any) => !(String(d) === d)
+  const selectOptionToString = (d: any[]) =>
+    d.map((o: any) => {
       if (isSelectOption(o)) { return o['label'] }
       return o
     })
 
   let option = ''
-  let options = field ? selectOptionToString(_field.options) : []
-  const addOption = e => {
+  let options = _field ? selectOptionToString(_field.options) : []
+  const addOption = (e: Event) => {
     e.preventDefault()
     if (option.trim() !== '') {
       options = [...new Set([...options, option])]
       option = ''
     }
   }
-  const removeOption = d => e => {
+  const removeOption = (d: any) => (e: Event) => {
     e.preventDefault()
     options = options.filter(o => o !== d)
   }
 
-  let error
+  let error: string | undefined
   let label = _field ? _field.label : null
 
-  const onSubmit = e => {
+  const onSubmit = (e: Event) => {
     e.preventDefault()
 
     if (!label) {
@@ -45,7 +46,7 @@
       return
     }
 
-    error = null
+    error = undefined
     
     const f = {
       type,

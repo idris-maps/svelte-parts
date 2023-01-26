@@ -1,18 +1,19 @@
-<script>
-  import Form from '@svelte-parts/form'
+<script lang="ts">
+  import type { Data, Range, Field } from '../../types'
+  import Form from '../../Form.svelte'
   import { fixProperty, formField, removeEmptyKeys, addExistingValues } from './utils'
 
-  export let onAdd
-  export let field = null
+  export let onAdd: (d: Range) => void
+  export let field: Field | null = null
 
-  let error
+  let error: string | undefined
 
-  const onSubmit = d => {
+  const onSubmit = (d: Data) => {
     if (d.min && d.max && d.min > d.max) {
       error = 'The minimum value is greater than the maximum value'
       return
     } else {
-      error = null
+      error = undefined
     }
 
     const f = {
@@ -24,7 +25,7 @@
       min: d.min,
       max: d.max,
       step: d.step,
-    }
+    } as Range
     onAdd(f)
   }
 
