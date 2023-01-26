@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Content as Part1 } from '../md/drop-file-1.md'
+import { Content as Part2 } from '../md/drop-file-2.md'
+import { Content as Part3 } from '../md/drop-file-3.md'
+import Demo1 from '../components/DropFileDemo1.svelte'
+import Demo2 from '../components/DropFileDemo2.svelte'
+---
+
+<Layout title="svelte-parts/DropFile" description="Drop files(s) or click to browse file system">
+<Part1 />
+<Demo1 client:load />
+<Part2 />
+<Demo2 client:load />
+<Part3 />
+
+</Layout>

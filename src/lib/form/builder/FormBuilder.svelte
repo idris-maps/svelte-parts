@@ -3,8 +3,8 @@
   import DisplayFields from './DisplayFields/DisplayFields.svelte'
   import type { Field } from '../types'
 
-  export let onSubmit:(fields: Field[]) => void
-  export let onChange: (fields: Field[]) => void
+  export let onSubmit: ((fields: Field[]) => void) | null
+  export let onChange: ((fields: Field[]) => void) | null
   export let ignoreTypes: string[] = []
 
   let fields: Field[] = []
