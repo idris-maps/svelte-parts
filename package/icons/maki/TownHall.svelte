@@ -1,0 +1,11 @@
+<script>export let inline = true;
+const inlineStyle = "width:1em;position:relative;top:0.15em;";
+</script>
+
+<svg
+  viewBox="0 0 15 15"
+  fill="currentColor"
+  style={inline ? inlineStyle : undefined}
+>
+  <path d="M13,4H9l0-3L7.5,0L6,1v3H2L1,5v1h13V5L13,4z M7.5,1.5c0.4,0,0.7,0.3,0.7,0.8S7.9,3,7.5,3S6.7,2.7,6.7,2.2&#xA;&#x9;C6.7,1.8,7.1,1.5,7.5,1.5z M13,7H2v4l-1,1.5V14h13v-1.5L13,11V7z M5,12.5H4V8h1V12.5z M8,12.5H7V8h1V12.5z M11,12.5h-1V8h1V12.5z"/>
+</svg>
