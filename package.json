@@ -1,6 +1,6 @@
 {
 	"name": "svelte-parts",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"scripts": {
 		"pkg": "svelte-package",
 		"dev": "vite dev --port 3000"
@@ -27,5 +27,11 @@
 		"dompurify": "^2.4.3",
 		"leaflet": "^1.9.3",
 		"marked": "^4.2.12"
-	}
+	},
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/idris-maps/svelte-parts.git"
+  },
+	"keywords": ["svelte", "components"],
+	"license": "MIT"
 }

@@ -1,5 +1,5 @@
 export * as form from './form'
-// export * as icons from './icons'
+export * as icons from './icons'
 export * as map from './map'
 export * as zoom from './zoom'
 export { default as DropFile } from './DropFile.svelte'

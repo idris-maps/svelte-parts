@@ -1,38 +1,28 @@
-# create-svelte
+# svelte-parts
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+docs: https://svelte-parts.surge.sh
 
-## Creating a project
+## install
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+npm install svelte-parts
 ```
 
-## Developing
+## components
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+* [DropFile](https://svelte-parts.surge.sh/drop-file) - Drop files(s) or click to browse file system 
+* [Form](https://svelte-parts.surge.sh/form) - Yet another form component 
+* [FormBuilder](https://svelte-parts.surge.sh/form-builder) - UI to create form descriptions for [Form](https://svelte-parts.surge.sh/form) 
+* [Icons](https://svelte-parts.surge.sh/icons) - SVG icons from feather icons, maki icons and octicons 
+* [Map](https://svelte-parts.surge.sh/map) - Mapping components using leaflet 
+* [Markdown](https://svelte-parts.surge.sh/markdown) - Use markdown blocks in your svelte app 
+* [Modal](https://svelte-parts.surge.sh/modal) - Just a modal 
+* [Zoom](https://svelte-parts.surge.sh/zoom) - Allow pan and zoom on images
 
-```bash
-npm run dev
+---
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## update 2023-01-28
 
-## Building
+Now using [svelte-kit](https://kit.svelte.dev/) to package the components. It fixes typescript errors in svelte@3. All components are now available under the same npm library: `svelte-parts`. The old `@svelte-parts/...` libraries are deprecated but still available.
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The `@svelte-parts/editor` was using an older version of [codemirror](https://codemirror.net/) and is not ported to `svelte-parts`.

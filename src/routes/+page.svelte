@@ -1,5 +1,1 @@
-<script lang="ts">
-  import { FormBuilder } from '../lib/form'
-</script>
-
-<FormBuilder />
+<h1>Hello</h1>
