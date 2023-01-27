@@ -1,0 +1,118 @@
+---
+import LogoDropFile from './LogoDropFile.astro'
+import LogoForm from './LogoForm.astro'
+import LogoFormBuilder from './LogoFormBuilder.astro'
+import LogoIcons from './LogoIcons.astro'
+import LogoMap from './LogoMap.astro'
+import LogoMarkdown from './LogoMarkdown.astro'
+import LogoModal from './LogoModal.astro'
+import LogoZoom from './LogoZoom.astro'
+
+export const all: [string, string, string, any][] = [
+  [
+    '/drop-file',
+    'DropFile',
+    'Drop files(s) or click to browse file system',
+    LogoDropFile,
+  ],
+  [
+    '/form',
+    'Form',
+    'Yet another form component',
+    LogoForm,
+  ],
+  [
+    '/form-builder',
+    'FormBuilder',
+    'UI to create form descriptions for [Form](/form)',
+    LogoFormBuilder,
+  ],
+  [
+    '/icons',
+    'Icons',
+    'SVG icons from feather icons, maki icons and octicons',
+    LogoIcons,
+  ],
+  [
+    '/map',
+    'Map',
+    'Mapping components using leaflet',
+    LogoMap,
+  ],
+  [
+    '/markdown',
+    'Markdown',
+    'Use markdown blocks in your svelte app',
+    LogoMarkdown,
+  ],
+  [
+    '/modal',
+    'Modal',
+    'Just a modal',
+    LogoModal,
+  ],
+  [
+    '/zoom',
+    'Zoom',
+    'Allow pan and zoom on images',
+    LogoZoom,
+  ],
+]
+---
+
+<div class="components">
+{
+  all.map(([href, name, description, Logo]) => (
+    <a class="card" href={href} title={name}>
+      <div>
+        <h2>{name}</h2>
+        <p>{description}</p>
+      </div>
+      <Logo />
+    </a>
+  ))
+}
+</div>
+
+<style>
+  .components {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 2em;
+    margin-top: 3em;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    column-gap: 1em;
+    font-size: calc(var(--font-size) * 0.8);
+    border: dotted 1px var(--color-border);
+    border-radius: 0.5em;
+    padding: 1em;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  .card:hover {
+    color: var(--color-primary);
+    background-color: var(--color-warning-bg);
+    text-decoration: none;
+    border: solid 1px var(--color-primary);
+  }
+  .card h2 {
+    margin: 0;
+    color: var(--color-primary);
+  }
+
+  @media(max-width:800px) {
+    .components {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media(max-width:500px) {
+    .card {
+      font-size: calc(var(--font-size) * 0.6);
+    }
+  }
+</style>

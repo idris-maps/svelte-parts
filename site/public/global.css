@@ -5,7 +5,7 @@
   --color-gray-3: rgb(85, 85, 85);
   --color-black: rgb(25, 25, 25);
   --color-svelte: #ff3e00;
-  --color-light-orange: #fff5f1;
+  --color-light-orange: #f3cfc0;
 
   --border-radius: 5px;
   --box-shadow: 2px 2px 10px;
@@ -23,7 +23,6 @@
   --width-content: 1080px;
 }
 
-/*
 @media (prefers-color-scheme: dark) {
   :root {
       --color-bg: var(--color-black);
@@ -32,7 +31,6 @@
       --color-border: var(--color-gray-1);
   }
 }
-*/
 
 * {
   box-sizing: border-box;
@@ -77,7 +75,6 @@ h6 {
 
 h1 {
   font-size: 2em;
-  color: var(--color-primary);
 }
 
 ol li,
