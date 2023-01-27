@@ -1,1 +1,5 @@
-<h1>hello</h1>
+<script lang="ts">
+  import { FormBuilder } from '../lib/form'
+</script>
+
+<FormBuilder />

@@ -95,7 +95,6 @@ export const all: [string, string, string, any][] = [
   }
   .card:hover {
     color: var(--color-primary);
-    background-color: var(--color-warning-bg);
     text-decoration: none;
     border: solid 1px var(--color-primary);
   }
@@ -103,16 +102,13 @@ export const all: [string, string, string, any][] = [
     margin: 0;
     color: var(--color-primary);
   }
-
-  @media(max-width:800px) {
-    .components {
-      grid-template-columns: 1fr;
-    }
+  .card:hover h2 {
+    color: var(--color-text);
   }
 
-  @media(max-width:500px) {
-    .card {
-      font-size: calc(var(--font-size) * 0.6);
+  @media(max-width:600px) {
+    .components {
+      grid-template-columns: 1fr;
     }
   }
 </style>

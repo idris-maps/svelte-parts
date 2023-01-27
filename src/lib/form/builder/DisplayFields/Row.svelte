@@ -43,7 +43,15 @@
       </button>
     {:else}
       <button
+        aria-label="Remove field"
+        title="Remove field"
+        on:click={onClickRemove(field)}
+      >
+        <DeleteIcon />
+      </button>
+      <button
         aria-label="Edit field"
+        title="Edit field"
         on:click={onToggleEdit}
       >
         <EditIcon />
@@ -59,12 +67,5 @@
       field={field}
       onSubmit={onSubmitUpdate(field)}
     />
-    <button
-      class="display-fields__delete-btn"
-      on:click={onClickRemove(field)}
-    >
-      <DeleteIcon />
-      Remove field
-    </button>
   </div>
 {/if}

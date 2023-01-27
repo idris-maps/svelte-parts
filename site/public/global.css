@@ -22,7 +22,7 @@
   --line-height: 1.5;
   --width-content: 1080px;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
       --color-bg: var(--color-black);
@@ -31,7 +31,7 @@
       --color-border: var(--color-gray-1);
   }
 }
-
+*/
 * {
   box-sizing: border-box;
 }
@@ -39,6 +39,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  accent-color: var(--color-primary);
 }
 
 
@@ -53,9 +54,9 @@ body {
   padding-bottom: 2em;
 }
 
-@media (max-width: 800px) { body { font-size: 20px; } }
-@media (max-width: 450px) { body { font-size: 16px; } }
-@media (max-width: 350px) { body { font-size: 14px; } }
+@media (max-width: 800px) { :root { --font-size: 20px; } }
+@media (max-width: 450px) { :root { --font-size: 16px; } }
+@media (max-width: 350px) { :root { --font-size: 14px; } }
 
 main {
   margin: 0 auto;
@@ -113,10 +114,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a b,
-a em,
-a i,
-a strong,
 button,
 input[type="submit"] {
   border-radius: var(--border-radius);
@@ -139,8 +136,6 @@ input[type="submit"]:hover {
   filter: brightness(var(--hover-brightness));
 }
 
-a b,
-a strong,
 button,
 input[type="submit"] {
   background: var(--color-primary);
@@ -156,8 +151,6 @@ input[type="submit"]:hover {
 }
 
 form {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
   display: block;
   padding: 1.5rem;
   text-align: var(--justify-normal);
@@ -201,14 +194,20 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
+input[type="radio"] {
+  margin-left: 0.8em;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   display: inline-block;
-  font-weight: normal;
   position: relative;
   top: 1px;
+  left: 0.5em;
 }
 
 input,
@@ -330,7 +329,7 @@ div.pristine input {
 .add-field__head,
 .display-fields__row {
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 2.5em;
 }
 
 .display-fields__row  {
@@ -359,6 +358,7 @@ div.pristine input {
   margin: 1em;
   padding: 1em;
   background-color: var(--color-bg-secondary);
+  font-size: calc(var(--font-size) * 0.8);
 }
 
 .add-field__details form,

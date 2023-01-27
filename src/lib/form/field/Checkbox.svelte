@@ -6,7 +6,6 @@
 </script>
 
 <div class="field checkbox-field">
-  <label for={field.property}>{ field.label || field.property }</label>
   <input
     type="checkbox"
     id={field.property}
@@ -17,4 +16,5 @@
       onChange(field.property, checked)
     }}
   />
+  <label for={field.property}>{ field.label || field.property }</label>
 </div>

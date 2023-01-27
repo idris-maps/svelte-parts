@@ -26,7 +26,7 @@
     // @ts-ignore
     const items = Array.from(e.dataTransfer.items)
     // @ts-ignore
-    onDrop(multiple ? items.map(d => d.getAsFile()) : [items[0].getAsFile()])
+    onDrop(items.map(d => d.getAsFile()))
     isOver = false
   }
 
