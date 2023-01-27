@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+import CodeResult from '../components/CodeResult.astro'
+import { Content as Part1 } from '../md/zoom-1.md'
+import { Content as Part2 } from '../md/zoom-2.md'
+import { Content as Part3 } from '../md/zoom-3.md'
+import Demo1 from '../components/ZoomDemo1.svelte'
+import Demo2 from '../components/ZoomDemo2.svelte'
+---
+
+<Layout title="svelte-parts/zoom" description="Allow pan and zoom on images">
+  <Part1 />
+  <CodeResult>
+    <Demo1 client:load />
+  </CodeResult>
+  <Part2 />
+  <CodeResult>
+    <Demo2 client:load />
+  </CodeResult>
+  <Part3 />
+</Layout>

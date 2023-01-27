@@ -1,12 +1,6 @@
 
 # Markdown
 
-## Install
-
-```
-npm install svelte-parts
-```
-
 ## Usage
 
 ```html
@@ -23,5 +17,4 @@ npm install svelte-parts
 </Markdown>
 ```
 
-## Result
 

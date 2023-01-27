@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Warning from '../components/Warning.astro'
+import CodeResult from '../components/CodeResult.astro'
+import { Content as Part1 } from '../md/map-1.md'
+import { Content as Part2 } from '../md/map-2.md'
+import { Content as Css } from '../md/map-css.md'
+import Demo from '../components/MapDemo.svelte'
+---
+
+<Layout title="svelte-parts/map" description="Mapping components using leaflet">
+  <Part1 />
+  <CodeResult>
+    <Demo client:only />
+  </CodeResult>
+  <Warning title="CSS and images">
+    <Css />
+  </Warning>
+  <Part2 />
+</Layout>

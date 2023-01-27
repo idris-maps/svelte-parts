@@ -1,0 +1,29 @@
+---
+export interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<div class="warning">
+  <h3>{title}</h3>
+  <slot></slot>
+</div>
+
+<style>
+  .warning {
+    padding: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: calc(var(--font-size) * 0.8);
+    background-color: var(--color-warning-bg);
+    color: var(--color-primary);
+    border: solid 1px var(--color-primary);
+    border-radius: 1em;
+  }
+
+  .warning h3 {
+    margin: 0;
+  }
+</style>

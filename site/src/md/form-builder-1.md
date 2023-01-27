@@ -1,12 +1,6 @@
-# @svelte-parts/form-builder
+# FormBuilder
 
-UI to create form descriptions for [@svelte-parts/form](https://github.com/idris-maps/svelte-parts/tree/master/packages/form#svelte-partsform).
-
-## Install
-
-```
-npm install svelte-parts
-```
+UI to create form descriptions for the [Form](/form) component.
 
 ## Usage
 

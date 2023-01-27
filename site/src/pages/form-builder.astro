@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import CodeResult from '../components/CodeResult.astro'
 import { Content as Part1 } from '../md/form-builder-1.md'
 import { Content as Part2 } from '../md/form-builder-2.md'
 import Demo from '../components/FormBuilderDemo.svelte'
@@ -7,6 +8,8 @@ import Demo from '../components/FormBuilderDemo.svelte'
 
 <Layout title="svelte-parts/FormBuilder" description="Create forms">
   <Part1 />
-  <Demo client:load />
+  <CodeResult>
+    <Demo client:load />
+  </CodeResult>
   <Part2 />
 </Layout>

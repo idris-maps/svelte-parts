@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Banner from 'svelte-parts/banner/Banner.svelte'
 import { Content } from '../md/home.md'
+import { Content as Install } from '../md/install.md'
 ---
 
 <Layout title="svelte-parts" description="svelte components">
-	<h3>Components for <a href="https://svelte.dev/">svelte</a></h3>
-	<Banner client:only />
+	<h1>Components for <a href="https://svelte.dev/">svelte</a></h1>
+	<Install />
 	<Content />
 </Layout>

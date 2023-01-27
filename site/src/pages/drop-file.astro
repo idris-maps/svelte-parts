@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import CodeResult from '../components/CodeResult.astro'
 import { Content as Part1 } from '../md/drop-file-1.md'
 import { Content as Part2 } from '../md/drop-file-2.md'
 import { Content as Part3 } from '../md/drop-file-3.md'
@@ -9,8 +10,12 @@ import Demo2 from '../components/DropFileDemo2.svelte'
 
 <Layout title="svelte-parts/DropFile" description="Drop files(s) or click to browse file system">
   <Part1 />
-  <Demo1 client:load />
+  <CodeResult>
+    <Demo1 client:load />
+  </CodeResult>
   <Part2 />
-  <Demo2 client:load />
+  <CodeResult>
+    <Demo2 client:load />
+  </CodeResult>
   <Part3 />
 </Layout>
