@@ -22,7 +22,7 @@
   --line-height: 1.5;
   --width-content: 1080px;
 }
-/*
+
 @media (prefers-color-scheme: dark) {
   :root {
       --color-bg: var(--color-black);
@@ -31,7 +31,7 @@
       --color-border: var(--color-gray-1);
   }
 }
-*/
+
 * {
   box-sizing: border-box;
 }
