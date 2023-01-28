@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Content as Part1 } from '../md/icons-1.md'
+import { Content as Part2 } from '../md/icons-2.md'
+import Demo1 from '../components/IconDemo1.svelte'
+import Demo2 from '../components/IconDemo2.svelte'
+import CodeResult from '../components/CodeResult.astro'
+---
+
+<Layout title="svelte-parts/icons" description="SVG icons from feather icons, maki icons and octicons">
+  <Part1 />
+  <CodeResult>
+    <Demo1 />
+  </CodeResult>
+  <Part2 />
+  <CodeResult>
+    <Demo2 />
+  </CodeResult>
+</Layout>

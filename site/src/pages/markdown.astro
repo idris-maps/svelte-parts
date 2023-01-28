@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Content as Part1 } from '../md/markdown-1.md'
+import { Content as Part2 } from '../md/markdown-2.md'
+import Demo from '../components/MarkdownDemo.svelte'
+import CodeResult from '../components/CodeResult.astro';
+---
+
+<Layout title="svelte-parts/Markdown" description="Use markdown block in your svelte app">
+  <Part1 />
+  <CodeResult>
+    <Demo client:load />
+  </CodeResult>
+  <Part2 />
+</Layout>

@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro'
+import CodeResult from '../components/CodeResult.astro'
+import { Content } from '../md/modal.md'
+import Demo from '../components/ModalDemo.svelte'
+---
+
+<Layout title="svelte-parts/Modal" description="Just a modal">
+  <Content />
+  <CodeResult>
+    <Demo client:load />
+  </CodeResult>
+</Layout>

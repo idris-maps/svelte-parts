@@ -1,10 +1,37 @@
 {
-  "name": "root",
-  "scripts": {
-    "publish": "lerna run build && lerna publish"
+	"name": "svelte-parts",
+	"version": "0.0.6",
+	"scripts": {
+		"pkg": "svelte-package",
+		"dev": "vite dev --port 3000"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/package": "^1.0.0",
+		"@types/d3-selection": "^3.0.4",
+		"@types/d3-zoom": "^3.0.2",
+		"@types/dompurify": "^2.4.0",
+		"@types/leaflet": "^1.9.0",
+		"@types/marked": "^4.0.8",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"d3-selection": "^3.0.0",
+		"d3-zoom": "^3.0.0",
+		"dompurify": "^2.4.3",
+		"leaflet": "^1.9.3",
+		"marked": "^4.2.12"
+	},
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/idris-maps/svelte-parts.git"
   },
-  "homepage": "https://svelte-parts.surge.sh",
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+	"keywords": ["svelte", "components"],
+	"license": "MIT"
 }

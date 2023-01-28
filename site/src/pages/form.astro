@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import CodeResult from '../components/CodeResult.astro'
+import { Content as Part1 } from '../md/form-1.md'
+import { Content as Part2 } from '../md/form-2.md'
+import Demo from '../components/FormDemo.svelte'
+---
+
+<Layout title="svelte-parts/Form" description="Yet another form component">
+  <Part1 />
+  <CodeResult>
+    <Demo client:load />
+  </CodeResult>
+  <Part2 />
+</Layout>
