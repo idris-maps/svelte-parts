@@ -2,6 +2,7 @@
   import FallbackSvg from './DropFileFallbackSvg.svelte'
 
   export let multiple: boolean = false
+  export let disabled: boolean = false
   export let onDrop: (files: File[]) => void
   export let onEnter: () => void = () => {}
   export let onLeave: () => void = () => {}
@@ -11,22 +12,26 @@
 
   const handleEnter = () => {
     isOver = true
-    if (onEnter) { onEnter() }
+    if (onEnter) {
+      onEnter()
+    }
   }
 
   const handleLeave = () => {
     isOver = false
-    if (onLeave) { onLeave() }
+    if (onLeave) {
+      onLeave()
+    }
   }
 
-  const handleDrop = (e: Event) => {
+  const handleDrop = (e: DragEvent) => {
     e.preventDefault()
-    // @ts-ignore
-    console.log(e.dataTransfer)
-    // @ts-ignore
-    const items = Array.from(e.dataTransfer.items)
-    // @ts-ignore
-    onDrop(items.map(d => d.getAsFile()))
+
+    if (!e?.dataTransfer?.items || disabled) {
+      return
+    }
+    const items = Array.from(e.dataTransfer.files)
+    onDrop(items)
     isOver = false
   }
 
@@ -36,11 +41,8 @@
 
   const handleChange = (e: Event) => {
     e.preventDefault()
-    // @ts-ignore
-    if (e.target && e.target.files) {
-      // @ts-ignore
-      onDrop(Array.from(e.target.files))
-    }
+    const files: FileList = <FileList>(<HTMLInputElement>e.target).files
+    onDrop(Array.from(files))
   }
 
   const onClick = () => {
@@ -76,6 +78,7 @@
   on:change={handleChange}
   bind:this={input}
   {multiple}
+  {disabled}
 />
 
 <style>
@@ -88,7 +91,7 @@
   }
   #fallback {
     display: grid;
-	  align-items: center;
+    align-items: center;
     width: 100%;
     height: 200px;
     border: black solid 1px;
