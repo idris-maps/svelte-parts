@@ -1,3 +1,9 @@
+<div style="background-color: #ffdddd; color: #cc0000; border: 1px solid #ff9999; padding: 10px; border-radius: 4px;">
+This library is archived. Framework churn made maintenance unsustainable.
+<br/>
+Use vanilla Web Components (no npm, no frameworks) for stable, future-proof UI instead.
+</div>
+
 # svelte-parts
 
 docs: https://svelte-parts.surge.sh
